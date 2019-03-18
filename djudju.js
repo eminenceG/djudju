@@ -1,3 +1,5 @@
+const { FileBox }  = require('file-box')
+
 const { Wechaty } = require('wechaty')
 
 function onScan (qrcode, status) {
@@ -23,7 +25,10 @@ async function onMessage (msg) {
   const content = msg.content()
 
   if (/dju/.test(content)) {
-    msg.say("爱你哦")
+    msg.say("djudju爱你哦")
+    const djudjuPhoto = FileBox.fromUrl('')
+    await msg.say(djudjuPhoto)
+
   }
   console.log(msg.toString())
 }

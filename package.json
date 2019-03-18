@@ -1,14 +1,27 @@
 {
   "name": "djudju",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "djudju wechat bot",
-  "main": "djudju.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "index.js",
+  "engines": {
+    "node": ">= 10"
   },
-  "author": "wenxuan",
+  "scripts": {
+    "postinstall": "check-node-version --node \">= 10\"",
+    "start": "node djudju.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "Wenxuan guo",
   "license": "ISC",
   "dependencies": {
+    "file-box": "^0.8.27",
+    "qrcode-terminal": "^0.12.0",
     "wechaty": "^0.22.6"
+  },
+  "devDependencies": {
+    "check-node-version": "^3.2.0"
   }
 }
