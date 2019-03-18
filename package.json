@@ -41,7 +41,7 @@
     "typescript": "^3.0.1",
     "wechaty": "^0.22.1",
     "file-box": "^0.8.22",
-    "wechaty-puppet": "^0.14.1",
+    "wechaty-puppet": "^0.14.1"
   },
   "git": {
     "scripts": {
