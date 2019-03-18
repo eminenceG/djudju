@@ -22,13 +22,15 @@ function onLogout(user) {
 }
 
 async function onMessage (msg) {
-  const content = msg.content()
+  const text = msg.text()
 
-  if (/dju/.test(content)) {
-    msg.say("djudju爱你哦")
-    const djudjuPhoto = FileBox.fromUrl('')
-    await msg.say(djudjuPhoto)
+  if (msg.self()) {
+    return
+  }
 
+  if (/dju/.test(text)) {
+    msg.say("djudju爱你哦!")
+    msg.say('http://i1.bvimg.com/680813/1b2a8f97f2db09d7.jpg')
   }
   console.log(msg.toString())
 }
