@@ -1,0 +1,14 @@
+{
+  "name": "djudju",
+  "version": "1.0.0",
+  "description": "djudju wechat bot",
+  "main": "djudju.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wenxuan",
+  "license": "ISC",
+  "dependencies": {
+    "wechaty": "^0.22.6"
+  }
+}
