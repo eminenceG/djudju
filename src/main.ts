@@ -14,8 +14,6 @@ import { startWeb }   from './start-web'
 async function main () {
   log.verbose('main', 'main()')
 
-  const name = process.env.WECHATY_NAME || 'djudju-bot'
-
   const bot = new Wechaty()
 
   await Promise.all([
