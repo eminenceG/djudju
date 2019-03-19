@@ -7,7 +7,7 @@
     "node": "10.4.1"
   },
   "scripts": {
-    "heroku-postbuild": "wechaty-heroku logs --tail-install",
+    "heroku-postbuild": "wechaty-puppet-install",
     "lint": "npm run lint:ts",
     "lint:ts": "tslint --project tsconfig.json && tsc --noEmit",
     "start": "echo -e '\n\nDo not use `npm start` because its buggy with SIGTERM\n\nUse Procfile instead.\n\n' && exit 1",
