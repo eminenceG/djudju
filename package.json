@@ -7,7 +7,7 @@
     "node": "10.4.1"
   },
   "scripts": {
-    "heroku-postbuild": "wechaty-puppet-install",
+    "heroku-postbuild": "wechaty-heroku logs --tail-install",
     "lint": "npm run lint:ts",
     "lint:ts": "tslint --project tsconfig.json && tsc --noEmit",
     "start": "echo -e '\n\nDo not use `npm start` because its buggy with SIGTERM\n\nUse Procfile instead.\n\n' && exit 1",
@@ -33,14 +33,14 @@
     "@types/request": "^2.47.1",
     "axios": "^0.18.0",
     "brolog": "^1.6.5",
+    "file-box": "^0.8.22",
     "finis": "^0.4.3",
     "hapi": "^17.5.1",
     "read-pkg-up": "^4.0.0",
     "request": "^2.87.0",
     "ts-node": "^7.0.0",
     "typescript": "^3.0.1",
-    "wechaty": "^0.22.1",
-    "file-box": "^0.8.22",
+    "wechaty": "^0.22.6",
     "wechaty-puppet": "^0.14.1"
   },
   "git": {

@@ -1,6 +1,11 @@
 import {
   log,
 }                     from './config'
+
+import {
+  Wechaty,
+}                 from 'wechaty'
+
 import { getWechaty } from './get-wechaty'
 import { startBot }   from './start-bot'
 import { startFinis } from './start-finis'
@@ -11,7 +16,7 @@ async function main () {
 
   const name = process.env.WECHATY_NAME || 'djudju-bot'
 
-  const bot = getWechaty(name)
+  const bot = new Wechaty()
 
   await Promise.all([
     bot.start(),

@@ -4,7 +4,7 @@ import {
   Wechaty,
 }             from 'wechaty'
 
-export async function onMessage (
+export default async function onMessage (
   this    : Wechaty,
   message : Message,
 ): Promise<void> {
@@ -19,4 +19,5 @@ export async function onMessage (
     message.say('djudju爱你哦!')
     message.say('http://i1.bvimg.com/680813/1b2a8f97f2db09d7.jpg')
   }
+
 }
