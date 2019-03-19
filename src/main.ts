@@ -6,7 +6,6 @@ import {
   Wechaty,
 }                 from 'wechaty'
 
-import { getWechaty } from './get-wechaty'
 import { startBot }   from './start-bot'
 import { startFinis } from './start-finis'
 import { startWeb }   from './start-web'
